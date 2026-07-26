@@ -1,0 +1,675 @@
+Build a professional, modern, responsive website for a drywall contracting company called **Capstone Drywall**.
+
+## PROJECT GOAL
+
+Create a high-quality business website for Capstone Drywall that is designed to generate leads and quote requests from potential residential and commercial drywall customers.
+
+The website should look:
+
+* Professional
+* Modern
+* Trustworthy
+* Clean
+* Reliable
+* Suitable for a professional construction and drywall company
+
+The main goal is to encourage visitors to:
+
+1. Call Capstone Drywall
+2. Request a free quote
+3. View previous drywall projects
+4. Learn about the company's services
+5. Learn about the areas Capstone Drywall serves
+
+The website must be mobile-first and work perfectly on:
+
+* Mobile phones
+* Tablets
+* Laptops
+* Desktop computers
+
+---
+
+# TECHNOLOGY
+
+Use a modern, maintainable technology stack that is easy to deploy to Vercel.
+
+Preferred stack:
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+Use clean, reusable components and a well-organized project structure.
+
+Keep the code professional, scalable, and easy for another developer to maintain.
+
+Do not overcomplicate the project.
+
+The final project should be ready to:
+
+* Store in GitHub
+* Deploy to Vercel
+* Connect to a custom domain
+
+Do not deploy or purchase anything automatically.
+
+---
+
+# BRAND
+
+Company Name:
+
+**Capstone Drywall**
+
+Use "Capstone Drywall" consistently throughout the website.
+
+Do not invent real business information.
+
+Use placeholders for information that has not yet been provided.
+
+For example:
+
+* Phone: [PHONE NUMBER]
+* Email: [EMAIL ADDRESS]
+* Address: [BUSINESS ADDRESS]
+* Service Area: [SERVICE AREA]
+
+Do not invent:
+
+* Phone numbers
+* Email addresses
+* Business addresses
+* Years of experience
+* Certifications
+* Licenses
+* Insurance claims
+* Awards
+* Customer reviews
+* Exact service areas
+
+Clearly label all placeholder information so it can easily be replaced later.
+
+---
+
+# WEBSITE PAGES
+
+Create the following pages:
+
+## 1. HOME PAGE
+
+Create a strong and professional hero section.
+
+Hero section should include:
+
+Company name:
+**Capstone Drywall**
+
+Headline:
+**Professional Drywall Services You Can Count On**
+
+Supporting text:
+
+"Capstone Drywall provides professional drywall installation, repair, finishing, and renovation services for residential and commercial projects. Contact us today to request a free quote."
+
+Primary CTA:
+**Request a Free Quote**
+
+Secondary CTA:
+**Call Us Today**
+
+Use a professional drywall/construction background image.
+
+Do not use copyrighted images without permission.
+
+Use appropriate royalty-free placeholder images during development, or clearly marked image placeholders that can later be replaced with Capstone Drywall's real project photos.
+
+The homepage should immediately communicate that Capstone Drywall is:
+
+* Professional
+* Reliable
+* Quality-focused
+* Customer-focused
+* Experienced in drywall work
+
+Add the following homepage sections:
+
+### Introduction
+
+Introduce Capstone Drywall and explain what the company does.
+
+### Services
+
+Show the main drywall services with:
+
+* Service title
+* Short description
+* Image or icon
+* Learn More button
+
+### Why Choose Capstone Drywall
+
+Include benefits such as:
+
+* Quality Workmanship
+* Reliable Service
+* Attention to Detail
+* Professional Approach
+* Residential and Commercial Services
+* Customer Satisfaction
+
+Do not claim specific certifications or years of experience unless provided by the client.
+
+### Project Gallery Preview
+
+Show a selection of project images.
+
+Add a button:
+**View Our Projects**
+
+### Service Areas
+
+Show a preview of the areas Capstone Drywall serves.
+
+Use placeholders until the actual service areas are provided.
+
+### Testimonials
+
+Add clearly labeled placeholder testimonials.
+
+Do not present fake testimonials as real customer reviews.
+
+Use text such as:
+"Sample testimonial — Replace with a genuine customer review before launch."
+
+### Call to Action
+
+Create a strong CTA section:
+
+**Ready to Start Your Drywall Project?**
+
+"Contact Capstone Drywall today to discuss your project and request a free quote."
+
+Button:
+**Request a Free Quote**
+
+### Contact Preview
+
+Show:
+
+* Phone
+* Email
+* Service Area
+
+Use placeholders where necessary.
+
+---
+
+# 2. ABOUT US PAGE
+
+Create a professional About Us page for Capstone Drywall.
+
+Include:
+
+### About Capstone Drywall
+
+Explain that Capstone Drywall is a professional drywall contractor serving residential and commercial customers.
+
+Use professional placeholder content where actual company information is not available.
+
+Clearly mark placeholder content so it can be replaced later.
+
+Include sections for:
+
+* Company Story
+* Mission
+* Values
+* Commitment to Quality
+* Customer Satisfaction
+* Professional Workmanship
+* Reliability
+
+Do not invent specific facts about the company.
+
+---
+
+# 3. SERVICES PAGE
+
+Create a detailed services page.
+
+Include possible services such as:
+
+* Drywall Installation
+* Drywall Repair
+* Drywall Finishing
+* Taping and Mudding
+* Drywall Patching
+* Ceiling Drywall
+* Drywall Texturing
+* Residential Drywall
+* Commercial Drywall
+* Renovation and Remodeling Drywall
+
+Each service should include:
+
+* Service title
+* Professional description
+* Relevant image
+* Call-to-action button
+
+Use clean, professional layouts.
+
+Make the services easy to update, add, or remove later.
+
+Add a CTA:
+**Request a Free Quote**
+
+---
+
+# 4. PROJECTS / GALLERY PAGE
+
+Create a professional project gallery.
+
+Use:
+
+* Responsive grid layout
+* High-quality construction/drywall images
+* Clean image presentation
+* Optional category filtering if appropriate
+* Hover effects
+* Image optimization
+* Lazy loading where appropriate
+
+The gallery must be easy to update with Capstone Drywall's real project photos.
+
+Use placeholder images during development.
+
+Do not use copyrighted images without permission.
+
+Add a CTA:
+**Have a Drywall Project in Mind? Request a Free Quote**
+
+---
+
+# 5. SERVICE AREAS PAGE
+
+Create a Service Areas page.
+
+Use placeholders initially:
+
+* [CITY]
+* [CITY 2]
+* [CITY 3]
+* [CITY 4]
+
+Make the locations easy to update.
+
+Add a section explaining:
+
+"Contact Capstone Drywall to confirm whether we provide services in your area."
+
+Do not invent service locations.
+
+Optimize the page structure for future local SEO.
+
+---
+
+# 6. TESTIMONIALS
+
+Create a testimonials section or page.
+
+Use clearly labeled placeholders only.
+
+Example:
+
+"Sample testimonial — Replace with a genuine customer review before launch."
+
+Do not create fake customer names, fake ratings, or fake reviews.
+
+Make it easy to add real testimonials later.
+
+---
+
+# 7. CONTACT / REQUEST A QUOTE PAGE
+
+Create a professional contact and quote request page.
+
+The main heading should be:
+
+**Request a Free Quote**
+
+Create a form with:
+
+* Full Name
+* Phone Number
+* Email Address
+* Project Address or City
+* Type of Project
+* Service Needed
+* Project Description
+* Preferred Contact Method
+* Optional Photo/File Upload if technically appropriate
+
+Submit button:
+
+**Request a Free Quote**
+
+Also display:
+
+* Phone: [PHONE NUMBER]
+* Email: [EMAIL ADDRESS]
+* Address: [BUSINESS ADDRESS]
+* Service Area: [SERVICE AREA]
+
+Use placeholders until the real information is provided.
+
+The form should include:
+
+* Required field validation
+* Clear error messages
+* Success message
+* Accessible labels
+* Mobile-friendly design
+
+For the initial version, implement the frontend form and validation.
+
+Structure the code so the form can later be connected to:
+
+* Email service
+* Backend
+* Database
+* Form service
+
+Do not hard-code passwords, API keys, or secrets.
+
+---
+
+# NAVIGATION
+
+Create a responsive navigation bar.
+
+Navigation links:
+
+* Home
+* About
+* Services
+* Projects
+* Service Areas
+* Contact
+
+Add a highly visible button:
+
+**Request a Free Quote**
+
+On mobile, use a clean hamburger menu.
+
+Make the navigation accessible and easy to use.
+
+---
+
+# DESIGN
+
+Create a professional construction and drywall industry aesthetic.
+
+Design goals:
+
+* Modern
+* Clean
+* Trustworthy
+* Professional
+* Strong visual hierarchy
+* Easy to read
+* Excellent spacing
+* Professional typography
+* Subtle animations
+* Fast loading
+* Mobile-first
+
+Use a professional neutral color palette suitable for Capstone Drywall.
+
+The design should feel like a real established professional contractor website.
+
+Avoid:
+
+* Excessive animations
+* Flashy gradients
+* Overly complicated layouts
+* Generic AI-looking designs
+* Excessive rounded cards
+* Unnecessary features
+* Cluttered layouts
+
+Use consistent:
+
+* Typography
+* Spacing
+* Buttons
+* Cards
+* Section headings
+* Icons
+
+Create a polished visual identity for Capstone Drywall.
+
+---
+
+# SEO
+
+Implement basic SEO best practices.
+
+Include:
+
+* Unique page titles
+* Meta descriptions
+* Open Graph metadata
+* Proper heading hierarchy
+* Semantic HTML
+* Descriptive image alt text
+* Clean URLs
+* Local business SEO structure
+
+Add a placeholder LocalBusiness schema where appropriate.
+
+Do not invent real business information in the schema.
+
+Create:
+
+* Sitemap
+* Robots.txt
+
+if appropriate for the chosen framework.
+
+The website should be structured so real business information can be added later for local SEO.
+
+---
+
+# PERFORMANCE
+
+Optimize the website for fast loading.
+
+Use:
+
+* Optimized images
+* Responsive images
+* Lazy loading
+* Proper font loading
+* Minimal unnecessary JavaScript
+* Good Core Web Vitals practices
+
+Avoid unnecessary dependencies.
+
+The website should be optimized for mobile performance.
+
+---
+
+# ACCESSIBILITY
+
+Follow good accessibility practices.
+
+Include:
+
+* Semantic HTML
+* Keyboard navigation
+* Accessible buttons
+* Accessible forms
+* Visible focus states
+* Sufficient color contrast
+* Meaningful alt text
+* ARIA labels where appropriate
+
+Make sure interactive elements are easy to use on mobile and desktop.
+
+---
+
+# FOOTER
+
+Create a professional footer.
+
+Include:
+
+* Capstone Drywall
+* Short company description
+* Quick links
+* Services
+* Service Areas
+* Phone
+* Email
+* Social media placeholders
+* Copyright notice
+* Privacy Policy link
+
+Create a basic Privacy Policy page placeholder.
+
+Clearly indicate that the privacy policy should be reviewed and customized based on the actual business, location, and applicable legal requirements before launch.
+
+---
+
+# CONTENT RULES
+
+Do not invent factual information about Capstone Drywall.
+
+Do not invent:
+
+* Customer reviews
+* Awards
+* Certifications
+* Licenses
+* Insurance
+* Years of experience
+* Business address
+* Phone number
+* Email address
+* Exact service areas
+
+Use placeholders where information is missing.
+
+Clearly identify placeholder content.
+
+Do not use fake testimonials as real testimonials.
+
+Do not use copyrighted images without permission.
+
+---
+
+# CODE QUALITY
+
+Use:
+
+* Reusable React components
+* Clean TypeScript
+* Clear file structure
+* Meaningful variable names
+* Clean CSS/Tailwind classes
+* Maintainable code
+* No unnecessary dependencies
+
+Avoid duplicated code where possible.
+
+Keep components modular and reusable.
+
+---
+
+# GITHUB AND DEPLOYMENT
+
+Prepare the project for GitHub and Vercel deployment.
+
+Create a clear README.md explaining:
+
+1. Project overview
+2. Technology used
+3. How to install dependencies
+4. How to run the project locally
+5. How to build the project
+6. How to deploy to Vercel
+7. Environment variables required
+8. How to connect the custom domain later
+
+Do not include any secrets or API keys in the repository.
+
+Create a `.env.example` file if environment variables are needed.
+
+---
+
+# FINAL QUALITY CHECK
+
+Before completing the project, review the entire website.
+
+Check that:
+
+1. There are no broken links.
+2. Every page is responsive.
+3. Navigation works correctly.
+4. Mobile navigation works correctly.
+5. All buttons work.
+6. Forms have validation.
+7. There are no console errors.
+8. Images have appropriate alt text.
+9. SEO metadata is present.
+10. Website is accessible.
+11. Website loads quickly.
+12. Website works on mobile, tablet, and desktop.
+13. The design is visually consistent.
+14. The website is ready for GitHub.
+15. The website is ready for Vercel deployment.
+16. No API keys or secrets are exposed.
+
+---
+
+# BEFORE LAUNCH CHECKLIST
+
+At the end of the project, create a section called:
+
+**Before Launch**
+
+Include a checklist of items that the website owner needs to provide or verify:
+
+* [ ] Real company phone number
+* [ ] Real company email
+* [ ] Business address, if applicable
+* [ ] Actual service areas
+* [ ] Real company logo
+* [ ] Real project photos
+* [ ] Genuine customer testimonials
+* [ ] Final service descriptions
+* [ ] Social media links
+* [ ] Privacy Policy review
+* [ ] Contact form configuration
+* [ ] Domain connection
+* [ ] Final mobile testing
+* [ ] Final desktop testing
+* [ ] Final SEO review
+
+Build the complete, polished first version of the Capstone Drywall website.
+
+Do not deploy the website automatically.
+
+Do not purchase anything automatically.
+
+Keep the project ready to be stored in GitHub and deployed to Vercel.
+
+After building the project, provide a concise summary of:
+
+1. What was built
+2. What information is still missing
+3. What needs to be replaced before launch
+4. The exact steps needed to deploy the website

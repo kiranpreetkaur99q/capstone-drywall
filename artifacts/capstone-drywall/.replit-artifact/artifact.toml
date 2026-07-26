@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Capstone Drywall"
+version = "1.0.0"
+id = "artifacts/capstone-drywall"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24449
+
+[services.development]
+run = "pnpm --filter @workspace/capstone-drywall run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/capstone-drywall", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/capstone-drywall/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24449"
+BASE_PATH = "/"

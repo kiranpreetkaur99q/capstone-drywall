@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Phone, Star, Shield, HardHat, Wrench, Ruler } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Phone, Star, Shield, HardHat, Wrench, Ruler, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Head } from '@/components/seo/Head';
 import heroBg from '@assets/generated_images/hero.jpg';
@@ -100,8 +100,8 @@ export default function Home() {
                 No shortcuts. No excuses. Just clean, straight lines and smooth surfaces ready for paint. We respect your property, your timeline, and your budget.
               </motion.p>
               <motion.div variants={fadeInUp} className="pt-4">
-                <Link href="/about" className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors">
-                  Learn more about our company <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="/contact" className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors">
+                  Discuss your project with our team <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </motion.div>
             </motion.div>
@@ -256,62 +256,90 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Preview */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Client Testimonials</h2>
-            <p className="text-lg text-slate-600">Hear what our clients have to say about working with Capstone Drywall.</p>
-            <div className="mt-4 inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-md font-medium text-sm">
-              Note: The reviews below are placeholders. Replace with genuine customer reviews before launch.
+      {/* Combined Testimonials & CTA Section */}
+      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4=')]"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* CTA Part */}
+            <div className="text-left">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Ready to Start Your Drywall Project?</h2>
+              <p className="text-xl mb-10 text-white/90">
+                Contact Capstone Drywall today to discuss your project and request a free quote. We're ready to deliver exceptional results.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact">
+                  <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg h-14 px-8 text-secondary font-bold">
+                    Request a Free Quote
+                  </Button>
+                </Link>
+                <a href="tel:555-0198">
+                  <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-transparent border-2 border-white text-white hover:bg-white/10">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call Us Today
+                  </Button>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 relative"
-              >
-                <div className="flex text-amber-400 mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
-                </div>
-                <p className="text-slate-600 mb-6 italic text-lg leading-relaxed">
-                  "Sample testimonial — Replace with a genuine customer review before launch. The team at Capstone was professional, punctual, and left our home cleaner than they found it. Highly recommended."
-                </p>
-                <div>
-                  <p className="font-bold text-secondary">John Doe</p>
-                  <p className="text-sm text-slate-500">Homeowner, [City Name]</p>
-                </div>
-              </motion.div>
-            ))}
+            {/* Testimonials Part */}
+            <div className="space-y-6">
+              <div className="inline-block bg-white/20 text-white px-4 py-2 rounded-md font-medium text-sm mb-2 backdrop-blur-sm">
+                What Our Clients Say
+              </div>
+              <div className="grid gap-6">
+                {[1, 2].map((idx) => (
+                  <motion.div 
+                    key={idx}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 relative"
+                  >
+                    <div className="flex text-amber-300 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                    </div>
+                    <p className="text-white/90 mb-4 italic leading-relaxed">
+                      "Sample testimonial — Replace with a genuine customer review before launch. The team at Capstone was professional, punctual, and left our home cleaner than they found it."
+                    </p>
+                    <div>
+                      <p className="font-bold text-white">John Doe</p>
+                      <p className="text-sm text-white/70">Homeowner, [City Name]</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4=')]"></div>
-        <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Ready to Start Your Drywall Project?</h2>
-          <p className="text-xl mb-10 text-white/90">
-            Contact Capstone Drywall today to discuss your project and request a free quote. We're ready to deliver exceptional results.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/contact">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg h-14 px-8 text-secondary font-bold">
-                Request a Free Quote
-              </Button>
-            </Link>
-            <a href="tel:555-0198">
-              <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-transparent border-2 border-white text-white hover:bg-white/10">
-                Call (555) 555-0198
-              </Button>
-            </a>
+      {/* Contact Strip */}
+      <section className="py-12 bg-secondary text-white border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div className="p-4 flex flex-col items-center">
+               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                 <Phone className="w-6 h-6 text-primary" />
+               </div>
+               <h3 className="font-bold mb-2 text-lg">Call Us</h3>
+               <p className="text-slate-300">(555) 555-0198</p>
+            </div>
+            <div className="p-4 flex flex-col items-center">
+               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                 <Mail className="w-6 h-6 text-primary" />
+               </div>
+               <h3 className="font-bold mb-2 text-lg">Email Us</h3>
+               <p className="text-slate-300">info@capstonedrywall.com</p>
+            </div>
+            <div className="p-4 flex flex-col items-center">
+               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                 <MapPin className="w-6 h-6 text-primary" />
+               </div>
+               <h3 className="font-bold mb-2 text-lg">Service Area</h3>
+               <p className="text-slate-300">[Primary City] & Surrounding Areas</p>
+            </div>
           </div>
         </div>
       </section>

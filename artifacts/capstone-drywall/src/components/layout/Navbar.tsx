@@ -9,10 +9,8 @@ export function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Service Areas', path: '/service-areas' },
     { name: 'Contact', path: '/contact' },
   ];
 

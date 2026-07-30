@@ -67,7 +67,7 @@ export default function Home() {
                     Request a Free Quote
                   </Button>
                 </Link>
-                <a href="tel:555-0198">
+                <a href="tel:6725137213">
                   <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8 border-white/20 text-white hover:bg-white hover:text-secondary">
                     <Phone className="mr-2 h-5 w-5" />
                     Call Us Today
@@ -273,7 +273,7 @@ export default function Home() {
                     Request a Free Quote
                   </Button>
                 </Link>
-                <a href="tel:555-0198">
+                <a href="tel:6725137213">
                   <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-transparent border-2 border-white text-white hover:bg-white/10">
                     <Phone className="mr-2 h-5 w-5" />
                     Call Us Today
@@ -324,7 +324,7 @@ export default function Home() {
                  <Phone className="w-6 h-6 text-primary" />
                </div>
                <h3 className="font-bold mb-2 text-lg">Call Us</h3>
-               <p className="text-slate-300">(555) 555-0198</p>
+               <p className="text-slate-300">(672) 513-7213</p>
             </div>
             <div className="p-4 flex flex-col items-center">
                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
@@ -337,8 +337,8 @@ export default function Home() {
                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
                  <MapPin className="w-6 h-6 text-primary" />
                </div>
-               <h3 className="font-bold mb-2 text-lg">Service Area</h3>
-               <p className="text-slate-300">[Primary City] & Surrounding Areas</p>
+               <h3 className="font-bold mb-2 text-lg">Address</h3>
+               <p className="text-slate-300">12699 68A Ave, Surrey BC V3W 1H3</p>
             </div>
           </div>
         </div>

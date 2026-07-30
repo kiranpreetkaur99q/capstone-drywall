@@ -61,7 +61,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-secondary mb-1">Phone</h3>
-                    <a href="tel:555-0198" className="text-slate-600 hover:text-primary transition-colors text-lg">(555) 555-0198</a>
+                    <a href="tel:6725137213" className="text-slate-600 hover:text-primary transition-colors text-lg">(672) 513-7213</a>
                   </div>
                 </div>
 
@@ -80,8 +80,8 @@ export default function Contact() {
                     <MapPin className="text-primary w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-secondary mb-1">Service Area</h3>
-                    <p className="text-slate-600">[Primary City] & Surrounding Areas</p>
+                    <h3 className="font-bold text-secondary mb-1">Address</h3>
+                    <p className="text-slate-600">12699 68A Ave, Surrey BC V3W 1H3</p>
                   </div>
                 </div>
               </div>

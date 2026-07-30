@@ -22,7 +22,7 @@ export function Navbar() {
           <img
             src={logo}
             alt="Capstone Drywall – Commercial & Residential"
-            className="h-14 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
         </Link>
 
@@ -43,9 +43,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="flex items-center gap-4">
-            <a href="tel:555-0198" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <a href="tel:6725137213" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4 text-primary" />
-              <span>(555) 555-0198</span>
+              <span>(672) 513-7213</span>
             </a>
             <Link href="/contact">
               <Button>Request a Quote</Button>
@@ -83,9 +83,9 @@ export function Navbar() {
               ))}
             </ul>
             <div className="flex flex-col gap-4 pt-4 border-t">
-              <a href="tel:555-0198" className="flex items-center gap-2 text-base font-medium text-foreground">
+              <a href="tel:6725137213" className="flex items-center gap-2 text-base font-medium text-foreground">
                 <Phone className="w-5 h-5 text-primary" />
-                <span>(555) 555-0198</span>
+                <span>(672) 513-7213</span>
               </a>
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button className="w-full">Request a Quote</Button>

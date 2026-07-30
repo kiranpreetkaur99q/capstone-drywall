@@ -71,7 +71,7 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <span className="block font-medium text-white mb-1">Phone</span>
-                  <a href="tel:555-0198" className="hover:text-primary transition-colors">(555) 555-0198</a>
+                  <a href="tel:6725137213" className="hover:text-primary transition-colors">(672) 513-7213</a>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-secondary-foreground/80">
@@ -84,8 +84,8 @@ export function Footer() {
               <li className="flex items-start gap-3 text-secondary-foreground/80">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <span className="block font-medium text-white mb-1">Service Area</span>
-                  <span>[Primary City] & Surrounding Areas</span>
+                  <span className="block font-medium text-white mb-1">Address</span>
+                  <span>12699 68A Ave, Surrey BC V3W 1H3</span>
                 </div>
               </li>
             </ul>

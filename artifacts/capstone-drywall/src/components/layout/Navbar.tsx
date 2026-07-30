@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Phone, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@assets/WhatsApp_Image_2026-07-29_at_11.43.20_1785425424981.jpeg';
 
 export function Navbar() {
   const [location] = useLocation();
@@ -17,13 +18,12 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-sm">
-            <span className="text-primary-foreground font-bold text-xl tracking-tighter">CD</span>
-          </div>
-          <span className="font-bold text-2xl tracking-tight text-foreground">
-            Capstone <span className="text-primary">Drywall</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <img
+            src={logo}
+            alt="Capstone Drywall – Commercial & Residential"
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}

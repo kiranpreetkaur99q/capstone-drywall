@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import logo from '@assets/WhatsApp_Image_2026-07-29_at_11.43.20_1785425424981.jpeg';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,13 +12,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2 inline-block">
-              <div className="w-8 h-8 bg-primary flex items-center justify-center rounded-sm">
-                <span className="text-primary-foreground font-bold tracking-tighter">CD</span>
+            <Link href="/" className="inline-block">
+              <div className="bg-white rounded px-3 py-2 inline-block">
+                <img
+                  src={logo}
+                  alt="Capstone Drywall – Commercial & Residential"
+                  className="h-12 w-auto object-contain"
+                />
               </div>
-              <span className="font-bold text-2xl tracking-tight text-white">
-                Capstone <span className="text-primary">Drywall</span>
-              </span>
             </Link>
             <p className="text-secondary-foreground/80 leading-relaxed text-sm">
               Professional drywall contracting services for residential and commercial projects. Quality workmanship, reliable service, and attention to detail you can count on.

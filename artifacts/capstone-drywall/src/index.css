@@ -72,8 +72,8 @@
   --popover-foreground: 222.2 84% 4.9%;
   --popover-border: 214.3 31.8% 91.4%;
 
-  /* Primary: Bold Amber / Orange */
-  --primary: 24.6 95% 53.1%;
+  /* Primary: Capstone Drywall Brand Red */
+  --primary: 0 88% 43%;
   --primary-foreground: 0 0% 100%;
 
   /* Secondary: Slate 800 */
@@ -90,7 +90,7 @@
   --destructive-foreground: 210 40% 98%;
 
   --input: 214.3 31.8% 91.4%;
-  --ring: 24.6 95% 53.1%;
+  --ring: 0 88% 43%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   --app-font-serif: Georgia, serif;
@@ -138,7 +138,8 @@
   --popover-foreground: 210 40% 98%;
   --popover-border: 217.2 32.6% 17.5%;
 
-  --primary: 24.6 95% 53.1%;
+  /* Primary: Capstone Drywall Brand Red */
+  --primary: 0 88% 43%;
   --primary-foreground: 0 0% 100%;
 
   --secondary: 217.2 32.6% 17.5%;

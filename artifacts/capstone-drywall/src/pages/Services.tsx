@@ -5,12 +5,13 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
 import { Head } from '@/components/seo/Head';
 
-import imgInstall from '@assets/generated_images/service-installation.jpg';
-import imgTaping from '@assets/generated_images/service-taping.jpg';
-import imgFraming from '@assets/generated_images/service-commercial.jpg';
-import imgTBar from '@assets/generated_images/service-ceiling.jpg';
-import imgMetalPanel from '@assets/generated_images/service-finishing.jpg';
-import imgSoffit from '@assets/generated_images/service-texturing.jpg';
+// Real Capstone Drywall job site photos
+import imgInstall    from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_(1)_1785560789215.jpeg';
+import imgTaping     from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_1785560802133.jpeg';
+import imgFraming1   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.55_1785560755445.jpeg';
+import imgFraming2   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_1785560771418.jpeg';
+import imgTBar       from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_(1)_1785560764251.jpeg';
+import imgSoffit     from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_(2)_1785560779700.jpeg';
 import imgInsulation from '@assets/generated_images/service-residential.jpg';
 
 const services = [
@@ -33,7 +34,7 @@ const services = [
     title: "Metal Steel Stud Framing",
     desc: "Professional metal steel stud framing for interior partitions, walls, and bulkheads. Steel framing offers superior straightness, fire resistance, and longevity — ideal for commercial offices, retail build-outs, and any application where precision and durability matter.",
     bullets: ["Interior partitions & feature walls", "Commercial & residential builds", "Fire-rated stud assemblies"],
-    img: imgFraming
+    img: imgFraming1
   },
   {
     id: "tbar-acoustic-ceilings",
@@ -47,7 +48,7 @@ const services = [
     title: "Metal Ceiling Panels & Installation",
     desc: "Supply and installation of metal ceiling panels for modern commercial interiors. Metal panel ceilings offer a sleek, contemporary aesthetic combined with durability and ease of maintenance — perfect for lobbies, corridors, boardrooms, and high-end retail environments.",
     bullets: ["Snap-in & lay-in metal panels", "Custom grid configurations", "Commercial & institutional projects"],
-    img: imgMetalPanel
+    img: imgFraming2
   },
   {
     id: "specialty-ceilings",
@@ -80,7 +81,7 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">What We Do</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tight">What We Do</h1>
             <p className="text-xl text-slate-300">
               Full-service drywall and ceiling contracting — executed with precision, efficiency, and an unwavering commitment to quality across Vancouver Island and the Lower Mainland.
             </p>
@@ -103,7 +104,7 @@ export default function Services() {
                   transition={{ duration: 0.6 }}
                   className="w-full lg:w-1/2"
                 >
-                  <div className="relative rounded-lg overflow-hidden shadow-xl aspect-video lg:aspect-square max-h-[500px]">
+                  <div className="relative rounded-sm overflow-hidden shadow-xl aspect-video lg:aspect-square max-h-[500px]">
                     <img 
                       src={service.img} 
                       alt={service.title} 
@@ -119,7 +120,7 @@ export default function Services() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="w-full lg:w-1/2 space-y-6"
                 >
-                  <h2 className="text-3xl font-bold text-secondary">{service.title}</h2>
+                  <h2 className="text-3xl font-extrabold text-secondary">{service.title}</h2>
                   <p className="text-lg text-slate-600 leading-relaxed">
                     {service.desc}
                   </p>
@@ -154,13 +155,14 @@ export default function Services() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl font-bold">Service Areas</h2>
+            <p className="text-primary font-bold uppercase tracking-widest text-sm">Where We Work</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold">Service Areas</h2>
             <p className="text-slate-300 text-lg">
               Capstone Drywall proudly serves clients across British Columbia.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
               {["Vancouver Island", "Lower Mainland"].map((area) => (
-                <div key={area} className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-8 py-5 text-lg font-semibold">
+                <div key={area} className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-sm px-8 py-5 text-lg font-semibold">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
                   {area}
                 </div>
@@ -172,7 +174,7 @@ export default function Services() {
 
       <section className="py-20 bg-primary text-white text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Need a Custom Solution?</h2>
+          <h2 className="text-3xl font-extrabold mb-6 uppercase tracking-tight">Need a Custom Solution?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Whether it's a complex soffit assembly or a large commercial build-out, contact us to discuss your project anywhere on Vancouver Island or the Lower Mainland.
           </p>

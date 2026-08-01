@@ -4,13 +4,14 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Phone, MapPin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Head } from '@/components/seo/Head';
-import heroBg from '@assets/generated_images/hero.jpg';
-import project1 from '@assets/generated_images/project-1.jpg';
-import project2 from '@assets/generated_images/project-2.jpg';
-import project3 from '@assets/generated_images/project-3.jpg';
-import project4 from '@assets/generated_images/project-4.jpg';
-import project5 from '@assets/generated_images/project-5.jpg';
-import project6 from '@assets/generated_images/project-6.jpg';
+// Real Capstone Drywall job site photos
+import heroBg from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_1785560771418.jpeg';
+import project1 from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_(2)_1785560779700.jpeg';
+import project2 from '@assets/WhatsApp_Image_2026-07-30_at_21.50.55_1785560755445.jpeg';
+import project3 from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_(1)_1785560764251.jpeg';
+import project4 from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_(1)_1785560789215.jpeg';
+import project5 from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_1785560802133.jpeg';
+import project6 from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_1785560771418.jpeg';
 
 const services = [
   "Drywall Installation",

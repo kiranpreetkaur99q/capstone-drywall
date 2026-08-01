@@ -52,6 +52,11 @@ export default function Home() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="max-w-2xl"
           >
+            {/* Experience badge */}
+            <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 text-primary font-bold uppercase tracking-widest text-sm px-4 py-2 rounded-sm mb-6">
+              5+ Years Experience
+            </div>
+
             {/* Red left-border accent — RWC-style */}
             <div className="flex items-start gap-5 mb-8">
               <div className="w-1.5 bg-primary self-stretch rounded-full shrink-0 mt-1" />

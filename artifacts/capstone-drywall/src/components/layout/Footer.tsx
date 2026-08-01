@@ -56,11 +56,18 @@ export function Footer() {
             <h3 className="text-lg font-bold text-white uppercase tracking-wider">Our Services</h3>
             <ul className="space-y-3">
               <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Drywall Installation</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Drywall Repair & Patching</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Taping & Mudding</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Finishing & Texturing</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Commercial Drywall</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Taping</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Steel Stud Framing</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Acoustic Ceilings</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Insulation</Link></li>
             </ul>
+            <div className="pt-2 border-t border-white/10">
+              <p className="text-xs text-secondary-foreground/50 uppercase tracking-wider font-semibold mb-2">Service Areas</p>
+              <ul className="space-y-1">
+                <li className="text-secondary-foreground/80 text-sm">Vancouver Island</li>
+                <li className="text-secondary-foreground/80 text-sm">Lower Mainland</li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact */}

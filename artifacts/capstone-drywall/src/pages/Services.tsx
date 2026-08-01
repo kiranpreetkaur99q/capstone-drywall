@@ -6,76 +6,46 @@ import { Link } from 'wouter';
 import { Head } from '@/components/seo/Head';
 
 import imgInstall from '@assets/generated_images/service-installation.jpg';
-import imgRepair from '@assets/generated_images/service-repair.jpg';
-import imgFinishing from '@assets/generated_images/service-finishing.jpg';
 import imgTaping from '@assets/generated_images/service-taping.jpg';
-import imgPatching from '@assets/generated_images/service-patching.jpg';
+import imgFraming from '@assets/generated_images/service-commercial.jpg';
 import imgCeiling from '@assets/generated_images/service-ceiling.jpg';
-import imgTexturing from '@assets/generated_images/service-texturing.jpg';
-import imgRes from '@assets/generated_images/service-residential.jpg';
-import imgCom from '@assets/generated_images/service-commercial.jpg';
-import imgReno from '@assets/generated_images/service-renovation.jpg';
+import imgInsulation from '@assets/generated_images/service-residential.jpg';
 
 const services = [
   {
-    id: "installation",
+    id: "drywall-installation",
     title: "Drywall Installation",
-    desc: "Expert hanging of drywall for new builds, additions, and complete remodels. We ensure perfectly aligned boards, properly spaced fasteners, and structurally sound installations ready for finishing.",
+    desc: "Expert hanging and installation of drywall for new builds, additions, and complete remodels. We ensure perfectly aligned boards, properly spaced fasteners, and structurally sound installations ready for finishing — whether it's a single room or an entire commercial build-out.",
+    bullets: ["New construction & renovations", "Residential & commercial", "Level-ready for finishing"],
     img: imgInstall
   },
   {
-    id: "repair",
-    title: "Drywall Repair",
-    desc: "Comprehensive repair services for water damage, settling cracks, popped nails, and general wear and tear. We identify the root cause and restore the structural integrity of your walls.",
-    img: imgRepair
-  },
-  {
-    id: "finishing",
-    title: "Drywall Finishing",
-    desc: "Professional finishing up to Level 5. We provide impeccably smooth surfaces that are critical for high-gloss paints, critical lighting areas, and high-end residential or commercial spaces.",
-    img: imgFinishing
-  },
-  {
     id: "taping",
-    title: "Taping and Mudding",
-    desc: "Precision joint treatment to create seamless transitions between drywall boards. Our meticulous taping process prevents future cracking and ensures a perfectly flat surface.",
+    title: "Taping",
+    desc: "Precision joint treatment to create seamless transitions between drywall boards. Our meticulous taping and mudding process prevents future cracking and ensures a perfectly flat surface that holds paint beautifully and stands the test of time.",
+    bullets: ["Paper & mesh tape applications", "Multi-coat mud finishing", "Feather-edge blending"],
     img: imgTaping
   },
   {
-    id: "patching",
-    title: "Drywall Patching",
-    desc: "Quick, seamless patching for holes caused by plumbing access, electrical work, or accidents. We match existing textures and finishes so the patch becomes invisible after painting.",
-    img: imgPatching
+    id: "steel-stud-framing",
+    title: "Steel Stud Framing",
+    desc: "Professional steel stud framing for interior partitions, walls, and bulkheads. Steel framing offers superior straightness, fire resistance, and longevity over wood — ideal for commercial spaces, basement developments, and any application where precision matters.",
+    bullets: ["Interior partitions & feature walls", "Commercial & residential builds", "Fire-rated assemblies"],
+    img: imgFraming
   },
   {
-    id: "ceiling",
-    title: "Ceiling Drywall",
-    desc: "Specialized installation and finishing for ceilings. We handle everything from standard flat ceilings to complex custom bulkheads, drop ceilings, and architectural details.",
+    id: "acoustic-ceilings",
+    title: "Acoustic Ceilings",
+    desc: "Installation of suspended acoustic tile ceilings and specialty sound-dampening assemblies. We handle grid layout, tile placement, and integration with lighting and HVAC — delivering clean, professional results for offices, schools, retail spaces, and more.",
+    bullets: ["T-bar grid systems", "Acoustic tile installation", "Drop ceiling & bulkhead work"],
     img: imgCeiling
   },
   {
-    id: "texturing",
-    title: "Drywall Texturing",
-    desc: "Application of various textures including knockdown, orange peel, and custom hand-troweled finishes. We can also match existing textures during repair work or completely remove old textures.",
-    img: imgTexturing
-  },
-  {
-    id: "residential",
-    title: "Residential Drywall",
-    desc: "Tailored services for homeowners. We treat your home with respect, utilizing advanced dust-control measures and maintaining a clean work environment throughout the project.",
-    img: imgRes
-  },
-  {
-    id: "commercial",
-    title: "Commercial Drywall",
-    desc: "Large-scale installations for offices, retail spaces, and industrial buildings. We work efficiently to meet tight construction schedules while coordinating seamlessly with other trades.",
-    img: imgCom
-  },
-  {
-    id: "renovation",
-    title: "Renovation Drywall",
-    desc: "Specialized services for remodeling projects. We excel at tying new drywall into existing plaster or older drywall systems, ensuring a cohesive look across the renovated space.",
-    img: imgReno
+    id: "insulation",
+    title: "Insulation",
+    desc: "Supply and installation of insulation to improve energy efficiency, soundproofing, and comfort. We work with batt, blown-in, and rigid foam products, ensuring proper coverage and fit between studs, joists, and ceiling cavities before drywall goes up.",
+    bullets: ["Thermal & acoustic insulation", "Walls, ceilings & floors", "Residential & commercial"],
+    img: imgInsulation
   }
 ];
 
@@ -84,7 +54,7 @@ export default function Services() {
     <>
       <Head 
         title="Our Services | Capstone Drywall" 
-        description="Comprehensive drywall services including installation, repair, finishing, taping, and texturing for residential and commercial projects." 
+        description="Professional drywall installation, taping, steel stud framing, acoustic ceilings, and insulation services for residential and commercial projects in Vancouver Island and the Lower Mainland." 
       />
 
       <section className="bg-secondary py-20 text-white">
@@ -96,7 +66,7 @@ export default function Services() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
             <p className="text-xl text-slate-300">
-              Professional drywall solutions executed with precision, efficiency, and an unwavering commitment to quality.
+              Professional drywall solutions executed with precision, efficiency, and an unwavering commitment to quality across Vancouver Island and the Lower Mainland.
             </p>
           </motion.div>
         </div>
@@ -138,15 +108,11 @@ export default function Services() {
                     {service.desc}
                   </p>
                   <ul className="space-y-3 pt-2">
-                    <li className="flex items-center gap-3 text-slate-700 font-medium">
-                      <CheckCircle2 className="w-5 h-5 text-primary" /> Free Estimates
-                    </li>
-                    <li className="flex items-center gap-3 text-slate-700 font-medium">
-                      <CheckCircle2 className="w-5 h-5 text-primary" /> Professional Execution
-                    </li>
-                    <li className="flex items-center gap-3 text-slate-700 font-medium">
-                      <CheckCircle2 className="w-5 h-5 text-primary" /> Clean Job Site
-                    </li>
+                    {service.bullets.map((bullet, i) => (
+                      <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0" /> {bullet}
+                      </li>
+                    ))}
                   </ul>
                   <div className="pt-6">
                     <Link href={`/contact?service=${service.id}`}>
@@ -163,11 +129,36 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Service Areas */}
+      <section className="py-20 bg-secondary text-white">
+        <div className="container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto space-y-6"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold">Service Areas</h2>
+            <p className="text-slate-300 text-lg">
+              Capstone Drywall proudly serves clients across British Columbia.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+              {["Vancouver Island", "Lower Mainland"].map((area) => (
+                <div key={area} className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-8 py-5 text-lg font-semibold">
+                  <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                  {area}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section className="py-20 bg-primary text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6">Need a Custom Drywall Solution?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            If you have a unique project or require specific drywall applications, contact us. We have the expertise to handle complex architectural requirements.
+            If you have a unique project or specific requirements, contact us. We have the expertise to handle complex architectural needs anywhere on Vancouver Island or the Lower Mainland.
           </p>
           <Link href="/contact">
             <Button size="lg" variant="secondary" className="text-lg h-14 px-8 font-bold">

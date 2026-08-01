@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Phone, Star, Shield, HardHat, Wrench, Ruler, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Phone, Star, Shield, HardHat, Wrench, Ruler, Volume2, Layers, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Head } from '@/components/seo/Head';
 import heroBg from '@assets/generated_images/hero.jpg';
@@ -138,12 +138,13 @@ export default function Home() {
             <p className="text-lg text-slate-600">Comprehensive drywall solutions executed with professional precision.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {[
-              { icon: HardHat, title: "Installation", desc: "Expert hanging and installation for new builds and renovations." },
-              { icon: Wrench, title: "Repair & Patching", desc: "Seamless repairs for water damage, cracks, and holes." },
-              { icon: Ruler, title: "Taping & Mudding", desc: "Precision joint treatment for perfectly flat walls." },
-              { icon: Star, title: "Finishing", desc: "Smooth finishes up to Level 5 and custom texturing." }
+              { icon: HardHat, title: "Drywall Installation", desc: "Expert hanging for new builds, additions, and complete remodels." },
+              { icon: Ruler, title: "Taping", desc: "Precision joint taping and mudding for perfectly flat, seamless walls." },
+              { icon: Wrench, title: "Steel Stud Framing", desc: "Interior steel stud partitions and fire-rated wall assemblies." },
+              { icon: Volume2, title: "Acoustic Ceilings", desc: "T-bar grid systems and acoustic tile installation for any space." },
+              { icon: Layers, title: "Insulation", desc: "Thermal and acoustic insulation for energy efficiency and comfort." }
             ].map((service, idx) => (
               <motion.div 
                 key={idx}
@@ -169,6 +170,26 @@ export default function Home() {
             <Link href="/services">
               <Button variant="outline" size="lg">View All Services</Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-14 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-1">Where We Work</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-secondary">Proudly Serving British Columbia</h2>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              {["Vancouver Island", "Lower Mainland"].map((area) => (
+                <div key={area} className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-lg px-8 py-4 text-lg font-semibold text-secondary">
+                  <MapPin className="w-5 h-5 text-primary shrink-0" />
+                  {area}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

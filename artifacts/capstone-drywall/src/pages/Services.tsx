@@ -94,8 +94,9 @@ export default function Services() {
           <div className="space-y-24">
             {services.map((service, idx) => (
               <div 
-                key={service.id} 
-                className={`flex flex-col ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}
+                key={service.id}
+                id={service.id}
+                className={`flex flex-col ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center scroll-mt-24`}
               >
                 <motion.div 
                   initial={{ opacity: 0, x: idx % 2 === 1 ? 50 : -50 }}

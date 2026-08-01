@@ -138,13 +138,15 @@ export default function Home() {
             <p className="text-lg text-slate-600">Comprehensive drywall solutions executed with professional precision.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {[
               { icon: HardHat, title: "Drywall Installation", desc: "Expert hanging for new builds, additions, and complete remodels." },
-              { icon: Ruler, title: "Taping", desc: "Precision joint taping and mudding for perfectly flat, seamless walls." },
-              { icon: Wrench, title: "Steel Stud Framing", desc: "Interior steel stud partitions and fire-rated wall assemblies." },
-              { icon: Volume2, title: "Acoustic Ceilings", desc: "T-bar grid systems and acoustic tile installation for any space." },
-              { icon: Layers, title: "Insulation", desc: "Thermal and acoustic insulation for energy efficiency and comfort." }
+              { icon: Ruler, title: "Commercial Taping & Plastering", desc: "Precision joint taping and plastering for flat, crack-resistant surfaces." },
+              { icon: Wrench, title: "Metal Steel Stud Framing", desc: "Interior steel stud partitions and fire-rated wall assemblies." },
+              { icon: Volume2, title: "T-Bar & Acoustic Ceilings", desc: "Suspended T-bar grids and acoustic tile for offices, schools & retail." },
+              { icon: Star, title: "Metal Ceiling Panels", desc: "Sleek metal panel ceilings for modern commercial interiors." },
+              { icon: Layers, title: "Specialty Ceilings & Soffits", desc: "Custom soffits, bulkheads, and architectural ceiling features." },
+              { icon: Shield, title: "Insulation", desc: "Thermal and acoustic insulation for energy efficiency and comfort." }
             ].map((service, idx) => (
               <motion.div 
                 key={idx}

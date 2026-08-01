@@ -56,9 +56,11 @@ export function Footer() {
             <h3 className="text-lg font-bold text-white uppercase tracking-wider">Our Services</h3>
             <ul className="space-y-3">
               <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Drywall Installation</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Taping</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Steel Stud Framing</Link></li>
-              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Acoustic Ceilings</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Commercial Drywall Taping & Plastering</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Metal Steel Stud Framing</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">T-Bar & Acoustic Ceilings</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Metal Ceiling Panels & Installation</Link></li>
+              <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Specialty Ceilings & Soffit Assemblies</Link></li>
               <li><Link href="/services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Insulation</Link></li>
             </ul>
             <div className="pt-2 border-t border-white/10">

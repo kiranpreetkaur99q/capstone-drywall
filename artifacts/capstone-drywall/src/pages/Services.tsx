@@ -8,7 +8,9 @@ import { Head } from '@/components/seo/Head';
 import imgInstall from '@assets/generated_images/service-installation.jpg';
 import imgTaping from '@assets/generated_images/service-taping.jpg';
 import imgFraming from '@assets/generated_images/service-commercial.jpg';
-import imgCeiling from '@assets/generated_images/service-ceiling.jpg';
+import imgTBar from '@assets/generated_images/service-ceiling.jpg';
+import imgMetalPanel from '@assets/generated_images/service-finishing.jpg';
+import imgSoffit from '@assets/generated_images/service-texturing.jpg';
 import imgInsulation from '@assets/generated_images/service-residential.jpg';
 
 const services = [
@@ -20,25 +22,39 @@ const services = [
     img: imgInstall
   },
   {
-    id: "taping",
-    title: "Taping",
-    desc: "Precision joint treatment to create seamless transitions between drywall boards. Our meticulous taping and mudding process prevents future cracking and ensures a perfectly flat surface that holds paint beautifully and stands the test of time.",
-    bullets: ["Paper & mesh tape applications", "Multi-coat mud finishing", "Feather-edge blending"],
+    id: "taping-plastering",
+    title: "Commercial Drywall Taping & Plastering",
+    desc: "Precision joint treatment and plastering to create seamless, paint-ready surfaces. Our commercial taping process handles high-volume projects efficiently without sacrificing quality — delivering flat, crack-resistant walls and ceilings that stand the test of time.",
+    bullets: ["Paper & mesh tape applications", "Multi-coat plastering", "Feather-edge blending for seamless results"],
     img: imgTaping
   },
   {
     id: "steel-stud-framing",
-    title: "Steel Stud Framing",
-    desc: "Professional steel stud framing for interior partitions, walls, and bulkheads. Steel framing offers superior straightness, fire resistance, and longevity over wood — ideal for commercial spaces, basement developments, and any application where precision matters.",
-    bullets: ["Interior partitions & feature walls", "Commercial & residential builds", "Fire-rated assemblies"],
+    title: "Metal Steel Stud Framing",
+    desc: "Professional metal steel stud framing for interior partitions, walls, and bulkheads. Steel framing offers superior straightness, fire resistance, and longevity — ideal for commercial offices, retail build-outs, and any application where precision and durability matter.",
+    bullets: ["Interior partitions & feature walls", "Commercial & residential builds", "Fire-rated stud assemblies"],
     img: imgFraming
   },
   {
-    id: "acoustic-ceilings",
-    title: "Acoustic Ceilings",
-    desc: "Installation of suspended acoustic tile ceilings and specialty sound-dampening assemblies. We handle grid layout, tile placement, and integration with lighting and HVAC — delivering clean, professional results for offices, schools, retail spaces, and more.",
-    bullets: ["T-bar grid systems", "Acoustic tile installation", "Drop ceiling & bulkhead work"],
-    img: imgCeiling
+    id: "tbar-acoustic-ceilings",
+    title: "T-Bar & Acoustic Ceilings",
+    desc: "Installation of suspended T-bar grid systems and acoustic ceiling tiles for offices, schools, healthcare facilities, and retail spaces. We handle full grid layout, tile placement, and integration with lighting and HVAC to deliver a clean, professional finish every time.",
+    bullets: ["T-bar suspended grid systems", "Acoustic tile installation", "Integration with lighting & HVAC"],
+    img: imgTBar
+  },
+  {
+    id: "metal-ceiling-panels",
+    title: "Metal Ceiling Panels & Installation",
+    desc: "Supply and installation of metal ceiling panels for modern commercial interiors. Metal panel ceilings offer a sleek, contemporary aesthetic combined with durability and ease of maintenance — perfect for lobbies, corridors, boardrooms, and high-end retail environments.",
+    bullets: ["Snap-in & lay-in metal panels", "Custom grid configurations", "Commercial & institutional projects"],
+    img: imgMetalPanel
+  },
+  {
+    id: "specialty-ceilings",
+    title: "Specialty Ceilings & Soffit Assemblies",
+    desc: "Design and construction of custom soffit assemblies, curved soffits, bulkheads, and architectural ceiling features. We work from plans or collaborate directly with designers to bring complex ceiling concepts to life with precision and craftsmanship.",
+    bullets: ["Custom soffits & bulkheads", "Curved & coffered ceiling details", "Coordination with mechanical & electrical trades"],
+    img: imgSoffit
   },
   {
     id: "insulation",
@@ -54,7 +70,7 @@ export default function Services() {
     <>
       <Head 
         title="Our Services | Capstone Drywall" 
-        description="Professional drywall installation, taping, steel stud framing, acoustic ceilings, and insulation services for residential and commercial projects in Vancouver Island and the Lower Mainland." 
+        description="Full-service drywall contractor: drywall installation, commercial taping & plastering, metal steel stud framing, T-bar & acoustic ceilings, metal ceiling panels, specialty ceilings, and insulation across Vancouver Island and the Lower Mainland." 
       />
 
       <section className="bg-secondary py-20 text-white">
@@ -64,9 +80,9 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">What We Do</h1>
             <p className="text-xl text-slate-300">
-              Professional drywall solutions executed with precision, efficiency, and an unwavering commitment to quality across Vancouver Island and the Lower Mainland.
+              Full-service drywall and ceiling contracting — executed with precision, efficiency, and an unwavering commitment to quality across Vancouver Island and the Lower Mainland.
             </p>
           </motion.div>
         </div>
@@ -156,9 +172,9 @@ export default function Services() {
 
       <section className="py-20 bg-primary text-white text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Need a Custom Drywall Solution?</h2>
+          <h2 className="text-3xl font-bold mb-6">Need a Custom Solution?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            If you have a unique project or specific requirements, contact us. We have the expertise to handle complex architectural needs anywhere on Vancouver Island or the Lower Mainland.
+            Whether it's a complex soffit assembly or a large commercial build-out, contact us to discuss your project anywhere on Vancouver Island or the Lower Mainland.
           </p>
           <Link href="/contact">
             <Button size="lg" variant="secondary" className="text-lg h-14 px-8 font-bold">

@@ -71,7 +71,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-secondary mb-1">Email</h3>
-                    <a href="mailto:info@capstonedrywall.com" className="text-slate-600 hover:text-primary transition-colors text-lg">info@capstonedrywall.com</a>
+                    <a href="mailto:capstoneroofinginfo@gmail.com" className="text-slate-600 hover:text-primary transition-colors text-lg">capstoneroofinginfo@gmail.com</a>
                   </div>
                 </div>
 

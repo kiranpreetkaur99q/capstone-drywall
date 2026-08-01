@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import logo from '@assets/WhatsApp_Image_2026-07-29_at_11.43.20_1785425424981.jpeg';
 
 export function Footer() {
@@ -24,20 +24,6 @@ export function Footer() {
             <p className="text-secondary-foreground/80 leading-relaxed text-sm">
               Professional drywall contracting services for residential and commercial projects. Quality workmanship, reliable service, and attention to detail you can count on.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
-                <Facebook className="w-5 h-5" />
-                <span className="sr-only">Facebook (Placeholder)</span>
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
-                <Instagram className="w-5 h-5" />
-                <span className="sr-only">Instagram (Placeholder)</span>
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
-                <Linkedin className="w-5 h-5" />
-                <span className="sr-only">LinkedIn (Placeholder)</span>
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -87,7 +73,7 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <span className="block font-medium text-white mb-1">Email</span>
-                  <a href="mailto:info@capstonedrywall.com" className="hover:text-primary transition-colors">info@capstonedrywall.com</a>
+                  <a href="mailto:capstoneroofinginfo@gmail.com" className="hover:text-primary transition-colors">capstoneroofinginfo@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-secondary-foreground/80">

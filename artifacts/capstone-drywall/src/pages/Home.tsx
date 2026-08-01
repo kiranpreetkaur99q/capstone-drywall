@@ -23,12 +23,6 @@ const services = [
   "Insulation",
 ];
 
-const stats = [
-  { value: "10+", label: "Years Experience" },
-  { value: "500+", label: "Projects Completed" },
-  { value: "100%", label: "Licensed & Insured" },
-  { value: "2", label: "Regions Served" },
-];
 
 export default function Home() {
   return (
@@ -87,19 +81,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── STATS BAR ── */}
-      <section className="bg-primary">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/20">
-            {stats.map((stat) => (
-              <div key={stat.label} className="py-8 px-6 text-center text-white">
-                <p className="text-3xl md:text-4xl font-extrabold mb-1">{stat.value}</p>
-                <p className="text-sm text-white/80 font-medium uppercase tracking-wide">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── WHAT WE DO ── */}
       <section className="py-24 bg-white">
@@ -325,7 +306,7 @@ export default function Home() {
             <div className="flex flex-col items-center py-4 gap-2">
               <Mail className="w-5 h-5 text-primary mb-1" />
               <p className="font-bold">Email Us</p>
-              <a href="mailto:info@capstonedrywall.com" className="text-slate-400 hover:text-primary transition-colors">info@capstonedrywall.com</a>
+              <a href="mailto:capstoneroofinginfo@gmail.com" className="text-slate-400 hover:text-primary transition-colors">capstoneroofinginfo@gmail.com</a>
             </div>
             <div className="flex flex-col items-center py-4 gap-2">
               <MapPin className="w-5 h-5 text-primary mb-1" />

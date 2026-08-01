@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Phone, Star, Shield, HardHat, Wrench, Ruler, Volume2, Layers, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Phone, MapPin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Head } from '@/components/seo/Head';
 import heroBg from '@assets/generated_images/hero.jpg';
@@ -9,233 +9,143 @@ import project1 from '@assets/generated_images/project-1.jpg';
 import project2 from '@assets/generated_images/project-2.jpg';
 import project3 from '@assets/generated_images/project-3.jpg';
 import project4 from '@assets/generated_images/project-4.jpg';
+import project5 from '@assets/generated_images/project-5.jpg';
+import project6 from '@assets/generated_images/project-6.jpg';
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
+const services = [
+  "Drywall Installation",
+  "Commercial Drywall Taping & Plastering",
+  "Metal Steel Stud Framing",
+  "T-Bar & Acoustic Ceilings",
+  "Metal Ceiling Panels & Installation",
+  "Specialty Ceilings & Soffit Assemblies",
+  "Insulation",
+];
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1 }
-  }
-};
+const stats = [
+  { value: "10+", label: "Years Experience" },
+  { value: "500+", label: "Projects Completed" },
+  { value: "100%", label: "Licensed & Insured" },
+  { value: "2", label: "Regions Served" },
+];
 
 export default function Home() {
   return (
     <>
-      <Head 
-        title="Capstone Drywall | Professional Drywall Contractor" 
-        description="Professional drywall installation, repair, finishing, and renovation services for residential and commercial projects. Get a free quote today." 
+      <Head
+        title="Capstone Drywall | Full-Service Wall & Ceiling Contractor — BC"
+        description="Full-service drywall and ceiling contractor serving Vancouver Island and the Lower Mainland. Drywall installation, taping, steel stud framing, acoustic ceilings, and more."
       />
 
-      {/* Hero Section */}
-      <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-secondary">
-        {/* Background Image with Overlay */}
+      {/* ── HERO ── */}
+      <section className="relative h-screen min-h-[620px] flex items-center overflow-hidden">
+        {/* Photo */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src={heroBg} 
-            alt="Drywall construction site" 
-            className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+          <img
+            src={heroBg}
+            alt="Capstone Drywall job site"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent"></div>
+          {/* Gradient — dark on left, lighter on right so photo shows */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0b1220]/85 via-[#0b1220]/60 to-[#0b1220]/20" />
         </div>
 
-        <div className="container mx-auto px-4 z-10">
-          <div className="max-w-3xl">
-            <motion.div 
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="space-y-6"
-            >
-              <motion.div variants={fadeInUp} className="inline-block px-4 py-1.5 bg-primary/20 border border-primary/30 rounded-sm text-primary font-semibold tracking-wide uppercase text-sm mb-2 backdrop-blur-sm">
-                Trusted Local Contractor
-              </motion.div>
-              <motion.h1 variants={fadeInUp} className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-                Professional Drywall Services You Can Count On
-              </motion.h1>
-              <motion.p variants={fadeInUp} className="text-xl text-slate-300 max-w-2xl leading-relaxed">
-                Capstone Drywall provides professional drywall installation, repair, finishing, and renovation services for residential and commercial projects.
-              </motion.p>
-              
-              <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href="/contact">
-                  <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 shadow-xl shadow-primary/20">
-                    Request a Free Quote
-                  </Button>
-                </Link>
-                <a href="tel:6725137213">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8 border-white/20 text-white hover:bg-white hover:text-secondary">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Us Today
-                  </Button>
-                </a>
-              </motion.div>
-            </motion.div>
-          </div>
+        <div className="container mx-auto px-6 z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="max-w-2xl"
+          >
+            {/* Red left-border accent — RWC-style */}
+            <div className="flex items-start gap-5 mb-8">
+              <div className="w-1.5 bg-primary self-stretch rounded-full shrink-0 mt-1" />
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight uppercase">
+                Building the Highest Standards
+              </h1>
+            </div>
+
+            <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-xl">
+              Full-service wall &amp; ceiling contractor serving Vancouver Island and the Lower Mainland. Residential and commercial — done right.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <Button size="lg" className="h-14 px-8 text-base font-bold shadow-xl shadow-primary/30">
+                  Request a Free Quote
+                </Button>
+              </Link>
+              <a href="tel:6725137213">
+                <Button size="lg" variant="outline" className="h-14 px-8 text-base border-white/30 text-white hover:bg-white/10 hover:border-white/60">
+                  <Phone className="mr-2 h-5 w-5" />
+                  (672) 513-7213
+                </Button>
+              </a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={staggerContainer}
-              className="space-y-6"
-            >
-              <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-secondary">
-                Precision Craftsmanship, <br/><span className="text-primary">Solid Foundation.</span>
-              </motion.h2>
-              <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
-                We are a dedicated team of drywall professionals committed to delivering flawless results. Whether it's a small home repair or a large-scale commercial build-out, we bring the same level of meticulous attention to every job.
-              </motion.p>
-              <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
-                No shortcuts. No excuses. Just clean, straight lines and smooth surfaces ready for paint. We respect your property, your timeline, and your budget.
-              </motion.p>
-              <motion.div variants={fadeInUp} className="pt-4">
-                <Link href="/contact" className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors">
-                  Discuss your project with our team <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </motion.div>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl"
-            >
-              <img src={project1} alt="Perfectly finished drywall" className="w-full h-full object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
-                <div className="flex items-center gap-4 text-white">
-                  <div className="bg-primary p-3 rounded-full">
-                    <Shield className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-lg">Fully Licensed & Insured</p>
-                    <p className="text-sm text-slate-300">For your peace of mind</p>
-                  </div>
-                </div>
+      {/* ── STATS BAR ── */}
+      <section className="bg-primary">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/20">
+            {stats.map((stat) => (
+              <div key={stat.label} className="py-8 px-6 text-center text-white">
+                <p className="text-3xl md:text-4xl font-extrabold mb-1">{stat.value}</p>
+                <p className="text-sm text-white/80 font-medium uppercase tracking-wide">{stat.label}</p>
               </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Preview Section */}
-      <section className="py-24 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Our Core Services</h2>
-            <p className="text-lg text-slate-600">Comprehensive drywall solutions executed with professional precision.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[
-              { icon: HardHat, title: "Drywall Installation", desc: "Expert hanging for new builds, additions, and complete remodels." },
-              { icon: Ruler, title: "Commercial Taping & Plastering", desc: "Precision joint taping and plastering for flat, crack-resistant surfaces." },
-              { icon: Wrench, title: "Metal Steel Stud Framing", desc: "Interior steel stud partitions and fire-rated wall assemblies." },
-              { icon: Volume2, title: "T-Bar & Acoustic Ceilings", desc: "Suspended T-bar grids and acoustic tile for offices, schools & retail." },
-              { icon: Star, title: "Metal Ceiling Panels", desc: "Sleek metal panel ceilings for modern commercial interiors." },
-              { icon: Layers, title: "Specialty Ceilings & Soffits", desc: "Custom soffits, bulkheads, and architectural ceiling features." },
-              { icon: Shield, title: "Insulation", desc: "Thermal and acoustic insulation for energy efficiency and comfort." }
-            ].map((service, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-md transition-shadow group"
-              >
-                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                  <service.icon className="h-7 w-7 text-primary group-hover:text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-3">{service.title}</h3>
-                <p className="text-slate-600 mb-6">{service.desc}</p>
-                <Link href="/services" className="text-primary font-semibold flex items-center hover:underline">
-                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                </Link>
-              </motion.div>
             ))}
           </div>
-          
-          <div className="text-center mt-12">
-            <Link href="/services">
-              <Button variant="outline" size="lg">View All Services</Button>
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Service Areas */}
-      <section className="py-14 bg-white border-t border-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-1">Where We Work</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-secondary">Proudly Serving British Columbia</h2>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              {["Vancouver Island", "Lower Mainland"].map((area) => (
-                <div key={area} className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-lg px-8 py-4 text-lg font-semibold text-secondary">
-                  <MapPin className="w-5 h-5 text-primary shrink-0" />
-                  {area}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-24 bg-secondary text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-1 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">The Capstone Standard</h2>
-              <p className="text-slate-300 text-lg leading-relaxed">
-                We've built our reputation on reliability and results. When you hire Capstone Drywall, you're partnering with professionals who care about the final product as much as you do.
+      {/* ── WHAT WE DO ── */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            {/* Left: heading + copy */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:sticky lg:top-32 space-y-6"
+            >
+              <p className="text-primary font-bold uppercase tracking-widest text-sm">Our Services</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-secondary leading-tight">
+                What We Do
+              </h2>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                We deliver precision craftsmanship across the full scope of wall and ceiling systems — from framing right through to finish. Residential and commercial, any size.
               </p>
-              <div className="pt-4">
-                <Link href="/contact">
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 border-0 shadow-lg shadow-primary/20">
-                    Discuss Your Project
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            
-            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {[
-                "Quality Workmanship", 
-                "Reliable Service", 
-                "Attention to Detail", 
-                "Professional Approach", 
-                "Residential & Commercial", 
-                "Customer Satisfaction"
-              ].map((benefit, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ opacity: 0, x: -20 }}
+              <Link href="/services">
+                <Button size="lg" className="mt-4">
+                  View All Services <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </motion.div>
+
+            {/* Right: service list — clean lined rows like the uploaded reference */}
+            <div className="divide-y divide-slate-200 border-t border-slate-200">
+              {services.map((service, idx) => (
+                <motion.div
+                  key={service}
+                  initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="flex items-start gap-4"
+                  transition={{ duration: 0.4, delay: idx * 0.06 }}
                 >
-                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2">{benefit}</h4>
-                    <p className="text-slate-400 text-sm">Consistent excellence delivered on every project, regardless of size or scope.</p>
-                  </div>
+                  <Link href="/services">
+                    <div className="group flex items-center justify-between py-5 cursor-pointer hover:pl-2 transition-all duration-200">
+                      <span className="text-lg font-semibold text-secondary group-hover:text-primary transition-colors">
+                        {service}
+                      </span>
+                      <div className="w-10 h-10 bg-primary/10 group-hover:bg-primary rounded flex items-center justify-center shrink-0 transition-colors">
+                        <ArrowRight className="w-4 h-4 text-primary group-hover:text-white transition-colors" />
+                      </div>
+                    </div>
+                  </Link>
                 </motion.div>
               ))}
             </div>
@@ -243,125 +153,183 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Project Gallery Preview */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Recent Projects</h2>
-              <p className="text-lg text-slate-600">Take a look at the quality of our work across various residential and commercial settings.</p>
+      {/* ── WHY CAPSTONE ── */}
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Photo grid */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.97 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid grid-cols-2 gap-3"
+            >
+              {[project1, project2, project3, project4].map((img, i) => (
+                <div key={i} className={`overflow-hidden rounded-sm ${i === 0 ? 'row-span-2' : ''}`}>
+                  <img
+                    src={img}
+                    alt={`Capstone project ${i + 1}`}
+                    className={`w-full object-cover ${i === 0 ? 'h-full' : 'h-48'}`}
+                  />
+                </div>
+              ))}
+            </motion.div>
+
+            {/* Copy */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-white space-y-8"
+            >
+              <p className="text-primary font-bold uppercase tracking-widest text-sm">Why Choose Us</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                The Capstone Standard
+              </h2>
+              <p className="text-slate-400 text-lg leading-relaxed">
+                We've built our reputation on showing up, doing the work right, and leaving a clean site behind. Whether it's one room or an entire commercial build-out, the standard doesn't change.
+              </p>
+              <ul className="space-y-4">
+                {[
+                  "Experienced tradespeople on every job",
+                  "Clean, organized work sites",
+                  "On time, on budget delivery",
+                  "Residential & commercial capability",
+                  "Fully licensed and insured in BC",
+                ].map((point) => (
+                  <li key={point} className="flex items-center gap-3 text-slate-300">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                    <span className="font-medium">{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact">
+                <Button size="lg" className="mt-2">
+                  Discuss Your Project <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PROJECT GALLERY ── */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+              <p className="text-primary font-bold uppercase tracking-widest text-sm mb-2">Our Work</p>
+              <h2 className="text-4xl font-extrabold text-secondary">Recent Projects</h2>
             </div>
             <Link href="/projects">
-              <Button variant="outline" className="hidden md:flex">View Full Gallery</Button>
+              <Button variant="outline" size="lg">View Full Gallery <ArrowRight className="ml-2 h-4 w-4" /></Button>
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 md:mb-0">
-            {[project1, project2, project3, project4].map((img, idx) => (
-              <motion.div 
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[project1, project2, project3, project4, project5, project6].map((img, idx) => (
+              <motion.div
                 key={idx}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: idx * 0.07 }}
                 whileHover={{ scale: 1.02 }}
-                className="relative h-64 rounded-sm overflow-hidden group cursor-pointer"
+                className="relative aspect-square overflow-hidden rounded-sm group cursor-pointer"
               >
-                <img src={img} alt={`Project sample ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-white font-semibold flex items-center">View Project <ArrowRight className="ml-2 h-4 w-4" /></span>
+                <img
+                  src={img}
+                  alt={`Project ${idx + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <ArrowRight className="text-white w-6 h-6" />
                 </div>
               </motion.div>
             ))}
           </div>
-          
-          <div className="mt-8 md:hidden">
-            <Link href="/projects">
-              <Button variant="outline" className="w-full">View Full Gallery</Button>
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Combined Testimonials & CTA Section */}
-      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4=')]"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* CTA Part */}
-            <div className="text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Ready to Start Your Drywall Project?</h2>
-              <p className="text-xl mb-10 text-white/90">
-                Contact Capstone Drywall today to discuss your project and request a free quote. We're ready to deliver exceptional results.
+      {/* ── SERVICE AREAS ── */}
+      <section className="py-20 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="space-y-3">
+              <p className="text-primary font-bold uppercase tracking-widest text-sm">Where We Work</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-secondary">
+                Proudly Serving British Columbia
+              </h2>
+              <p className="text-slate-600 max-w-md">
+                Based in Surrey, BC — Capstone Drywall operates across two major BC regions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
-                  <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg h-14 px-8 text-secondary font-bold">
-                    Request a Free Quote
-                  </Button>
-                </Link>
-                <a href="tel:6725137213">
-                  <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-transparent border-2 border-white text-white hover:bg-white/10">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Us Today
-                  </Button>
-                </a>
-              </div>
             </div>
-
-            {/* Testimonials Part */}
-            <div className="space-y-6">
-              <div className="inline-block bg-white/20 text-white px-4 py-2 rounded-md font-medium text-sm mb-2 backdrop-blur-sm">
-                What Our Clients Say
-              </div>
-              <div className="grid gap-6">
-                {[1, 2].map((idx) => (
-                  <motion.div 
-                    key={idx}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: idx * 0.1 }}
-                    className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 relative"
-                  >
-                    <div className="flex text-amber-300 mb-3">
-                      {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
-                    </div>
-                    <p className="text-white/90 mb-4 italic leading-relaxed">
-                      "Sample testimonial — Replace with a genuine customer review before launch. The team at Capstone was professional, punctual, and left our home cleaner than they found it."
-                    </p>
-                    <div>
-                      <p className="font-bold text-white">John Doe</p>
-                      <p className="text-sm text-white/70">Homeowner, [City Name]</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+            <div className="flex flex-col sm:flex-row gap-5 shrink-0">
+              {["Vancouver Island", "Lower Mainland"].map((area) => (
+                <div key={area} className="flex items-center gap-4 border-2 border-slate-200 hover:border-primary transition-colors rounded-sm px-8 py-5 min-w-[220px]">
+                  <MapPin className="w-6 h-6 text-primary shrink-0" />
+                  <span className="text-lg font-bold text-secondary">{area}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Strip */}
-      <section className="py-12 bg-secondary text-white border-t border-white/10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
-            <div className="p-4 flex flex-col items-center">
-               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                 <Phone className="w-6 h-6 text-primary" />
-               </div>
-               <h3 className="font-bold mb-2 text-lg">Call Us</h3>
-               <p className="text-slate-300">(672) 513-7213</p>
+      {/* ── CTA ── */}
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-6 text-center max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-6"
+          >
+            <p className="text-primary font-bold uppercase tracking-widest text-sm">Get Started</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+              Ready to Start Your Project?
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Contact Capstone Drywall today for a free quote. We're ready to deliver exceptional results.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Link href="/contact">
+                <Button size="lg" className="h-14 px-8 text-base font-bold">
+                  Request a Free Quote
+                </Button>
+              </Link>
+              <a href="tel:6725137213">
+                <Button size="lg" variant="outline" className="h-14 px-8 text-base border-white/30 text-white hover:bg-white/10">
+                  <Phone className="mr-2 h-5 w-5" />
+                  (672) 513-7213
+                </Button>
+              </a>
             </div>
-            <div className="p-4 flex flex-col items-center">
-               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                 <Mail className="w-6 h-6 text-primary" />
-               </div>
-               <h3 className="font-bold mb-2 text-lg">Email Us</h3>
-               <p className="text-slate-300">info@capstonedrywall.com</p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── CONTACT STRIP ── */}
+      <section className="py-12 bg-[#080f1a] text-white">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div className="flex flex-col items-center py-4 gap-2">
+              <Phone className="w-5 h-5 text-primary mb-1" />
+              <p className="font-bold">Call Us</p>
+              <a href="tel:6725137213" className="text-slate-400 hover:text-primary transition-colors">(672) 513-7213</a>
             </div>
-            <div className="p-4 flex flex-col items-center">
-               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                 <MapPin className="w-6 h-6 text-primary" />
-               </div>
-               <h3 className="font-bold mb-2 text-lg">Address</h3>
-               <p className="text-slate-300">12699 68A Ave, Surrey BC V3W 1H3</p>
+            <div className="flex flex-col items-center py-4 gap-2">
+              <Mail className="w-5 h-5 text-primary mb-1" />
+              <p className="font-bold">Email Us</p>
+              <a href="mailto:info@capstonedrywall.com" className="text-slate-400 hover:text-primary transition-colors">info@capstonedrywall.com</a>
+            </div>
+            <div className="flex flex-col items-center py-4 gap-2">
+              <MapPin className="w-5 h-5 text-primary mb-1" />
+              <p className="font-bold">Based In</p>
+              <p className="text-slate-400">12699 68A Ave, Surrey BC V3W 1H3</p>
             </div>
           </div>
         </div>

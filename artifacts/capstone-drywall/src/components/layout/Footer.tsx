@@ -73,7 +73,7 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <span className="block font-medium text-white mb-1">Email</span>
-                  <a href="mailto:capstoneroofinginfo@gmail.com" className="hover:text-primary transition-colors">capstoneroofinginfo@gmail.com</a>
+                  <a href="mailto:info@capstonedrywall.ca" className="hover:text-primary transition-colors">info@capstonedrywall.ca</a>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-secondary-foreground/80">

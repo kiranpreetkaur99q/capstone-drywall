@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
             </p>
             <p>
               <strong>Capstone Drywall</strong><br />
-              Email: capstoneroofinginfo@gmail.com<br />
+              Email: info@capstonedrywall.ca<br />
               Phone: (555) 555-0198
             </p>
           </div>

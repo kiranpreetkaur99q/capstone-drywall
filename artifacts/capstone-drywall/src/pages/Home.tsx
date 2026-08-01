@@ -306,7 +306,7 @@ export default function Home() {
             <div className="flex flex-col items-center py-4 gap-2">
               <Mail className="w-5 h-5 text-primary mb-1" />
               <p className="font-bold">Email Us</p>
-              <a href="mailto:capstoneroofinginfo@gmail.com" className="text-slate-400 hover:text-primary transition-colors">capstoneroofinginfo@gmail.com</a>
+              <a href="mailto:info@capstonedrywall.ca" className="text-slate-400 hover:text-primary transition-colors">info@capstonedrywall.ca</a>
             </div>
             <div className="flex flex-col items-center py-4 gap-2">
               <MapPin className="w-5 h-5 text-primary mb-1" />

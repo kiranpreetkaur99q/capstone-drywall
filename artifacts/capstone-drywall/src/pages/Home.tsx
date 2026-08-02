@@ -314,13 +314,13 @@ export default function Home() {
               { img: photo3, title: "Drywall & Ceiling Grid Install",  tag: "Commercial"  },
               { img: photo4, title: "Drywall Finishing & Taping",      tag: "Residential" },
             ].map((p, idx) => (
-              <Link key={idx} href="/projects">
+              <Link key={idx} href="/projects" className={`block ${idx === 0 ? 'row-span-2' : ''}`}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: idx * 0.07 }}
-                  className={`relative overflow-hidden rounded-sm group cursor-pointer ${idx === 0 ? 'row-span-2' : ''}`}
+                  className="relative overflow-hidden rounded-sm group cursor-pointer h-full"
                 >
                   <img src={p.img} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#060d18]/90 via-[#060d18]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">

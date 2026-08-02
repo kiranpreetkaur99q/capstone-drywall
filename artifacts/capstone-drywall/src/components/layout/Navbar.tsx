@@ -31,23 +31,13 @@ export function Navbar() {
       <div className={`w-full transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white border-b border-slate-100'}`}>
         <div className="container mx-auto px-4 h-20 flex items-center justify-between gap-6">
 
-          {/* Logo + Brand name */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="relative">
-              <img
-                src={logo}
-                alt="Capstone Drywall"
-                className="h-[52px] w-auto object-contain"
-              />
-            </div>
-            <div className="hidden sm:flex flex-col leading-tight">
-              <span className="text-[15px] font-extrabold text-secondary uppercase tracking-wider leading-none">
-                Capstone
-              </span>
-              <span className="text-[13px] font-bold text-primary uppercase tracking-[0.18em] leading-none mt-0.5">
-                Drywall
-              </span>
-            </div>
+          {/* Logo */}
+          <Link href="/" className="flex items-center shrink-0">
+            <img
+              src={logo}
+              alt="Capstone Drywall"
+              className="h-[68px] w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}

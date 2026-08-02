@@ -5,7 +5,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Head } from '@/components/seo/Head';
 
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string | undefined;
 
 interface FormData {
   name: string;
@@ -46,31 +45,11 @@ export default function Contact() {
     setIsSubmitting(true);
     setErrorMsg('');
 
-    if (!WEB3FORMS_KEY) {
-      setErrorMsg('The contact form is not yet configured. Please call us directly at (672) 513-7213.');
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      const payload = {
-        access_key: WEB3FORMS_KEY,
-        subject: `New Quote Request from ${form.name} — ${form.service}`,
-        from_name: 'Capstone Drywall Website',
-        name: form.name,
-        email: form.email,
-        phone: form.phone,
-        'Project Location': form.location,
-        'Project Type': form.type,
-        'Service Needed': form.service,
-        message: form.description,
-        botcheck: '',
-      };
-
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
       });
 
       const data = await res.json();

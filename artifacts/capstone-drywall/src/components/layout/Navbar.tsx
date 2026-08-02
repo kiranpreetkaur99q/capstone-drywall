@@ -29,14 +29,14 @@ export function Navbar() {
 
       {/* Main nav bar */}
       <div className={`w-full transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white border-b border-slate-100'}`}>
-        <div className="container mx-auto px-4 h-20 flex items-center justify-between gap-6">
+        <div className="container mx-auto px-4 h-28 flex items-center justify-between gap-6">
 
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <img
               src={logo}
               alt="Capstone Drywall"
-              className="h-[68px] w-auto object-contain"
+              className="h-[110px] w-auto object-contain"
             />
           </Link>
 

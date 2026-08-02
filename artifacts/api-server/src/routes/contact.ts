@@ -87,7 +87,7 @@ router.post("/contact", async (req, res) => {
       },
       body: JSON.stringify({
         from: "Capstone Drywall <onboarding@resend.dev>",
-        to: ["info@capstonedrywall.ca"],
+        to: [process.env["CONTACT_FORM_TO_EMAIL"] || "info@capstonedrywall.ca"],
         reply_to: email,
         subject: `New Quote Request: ${serviceLabel} — ${name}`,
         html,

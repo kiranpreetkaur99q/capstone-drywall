@@ -25,8 +25,8 @@ export default function PrivacyPolicy() {
           <div className="prose prose-slate max-w-none">
             <h2>1. Introduction</h2>
             <p>
-              [Capstone Drywall] ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
-              This policy describes the types of information we may collect from you or that you may provide when you visit the website [website URL] and our practices for collecting, using, maintaining, protecting, and disclosing that information.
+              Capstone Drywall ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
+              This policy describes the types of information we may collect from you or that you may provide when you visit capstonedrywall.ca and our practices for collecting, using, maintaining, protecting, and disclosing that information.
             </p>
 
             <h2>2. Information We Collect</h2>
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
             <p>
               <strong>Capstone Drywall</strong><br />
               Email: info@capstonedrywall.ca<br />
-              Phone: (555) 555-0198
+              Phone: (672) 513-7213
             </p>
           </div>
         </div>

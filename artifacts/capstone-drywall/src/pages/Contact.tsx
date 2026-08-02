@@ -30,7 +30,7 @@ export default function Contact() {
     email: '',
     location: '',
     type: 'residential',
-    service: serviceParam || 'installation',
+    service: serviceParam || 'drywall-installation',
     description: '',
   });
 
@@ -195,12 +195,12 @@ export default function Contact() {
                           onChange={handleChange}
                           className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                         >
-                          <option value="installation">Drywall Installation</option>
-                          <option value="taping">Commercial Drywall Taping & Plastering</option>
-                          <option value="framing">Metal Steel Stud Framing</option>
-                          <option value="tbar">T-Bar & Acoustic Ceilings</option>
-                          <option value="metal-ceiling">Metal Ceiling Panels</option>
-                          <option value="specialty">Specialty Ceilings & Soffit</option>
+                          <option value="drywall-installation">Drywall Installation</option>
+                          <option value="taping-plastering">Commercial Drywall Taping & Plastering</option>
+                          <option value="steel-stud-framing">Metal Steel Stud Framing</option>
+                          <option value="tbar-acoustic-ceilings">T-Bar & Acoustic Ceilings</option>
+                          <option value="metal-ceiling-panels">Metal Ceiling Panels</option>
+                          <option value="specialty-ceilings">Specialty Ceilings & Soffit</option>
                           <option value="insulation">Insulation</option>
                           <option value="other">Other / Multiple</option>
                         </select>

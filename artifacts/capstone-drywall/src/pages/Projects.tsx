@@ -84,7 +84,7 @@ export default function Projects() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.3 }}
-                  className="group relative aspect-square overflow-hidden rounded-sm bg-slate-100 cursor-pointer"
+                  className="group relative aspect-square overflow-hidden rounded-sm bg-slate-100"
                 >
                   <img
                     src={project.img}

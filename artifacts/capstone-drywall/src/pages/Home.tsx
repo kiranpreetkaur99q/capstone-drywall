@@ -290,26 +290,27 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[220px]">
             {galleryProjects.map((p, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.07 }}
-                className={`relative overflow-hidden rounded-sm group cursor-pointer ${idx === 0 ? 'row-span-2' : ''}`}
-              >
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-                  <span className="text-primary text-xs font-bold uppercase tracking-widest mb-1">{p.tag}</span>
-                  <span className="text-white font-bold text-base leading-snug">{p.title}</span>
-                </div>
-                {/* Corner accent */}
-                <div className="absolute top-0 left-0 w-0 h-0 border-t-[40px] border-l-[40px] border-t-primary border-l-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
+              <Link key={idx} href="/projects">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: idx * 0.07 }}
+                  className={`relative overflow-hidden rounded-sm group cursor-pointer ${idx === 0 ? 'row-span-2' : ''}`}
+                >
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span className="text-primary text-xs font-bold uppercase tracking-widest mb-1">{p.tag}</span>
+                    <span className="text-white font-bold text-base leading-snug">{p.title}</span>
+                  </div>
+                  {/* Corner accent */}
+                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[40px] border-l-[40px] border-t-primary border-l-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>

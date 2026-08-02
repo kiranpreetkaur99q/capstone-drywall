@@ -137,10 +137,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-secondary-foreground/40">
           <p>&copy; {currentYear} Capstone Drywall. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <span>Serving BC Since 2019</span>
-          </div>
+          <span>Serving BC Since 2019</span>
         </div>
       </div>
     </footer>

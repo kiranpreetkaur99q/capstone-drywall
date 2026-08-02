@@ -9,7 +9,6 @@ import Home from '@/pages/Home';
 import Services from '@/pages/Services';
 import Projects from '@/pages/Projects';
 import Contact from '@/pages/Contact';
-import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
@@ -22,7 +21,6 @@ function Router() {
         <Route path="/services" component={Services} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
-        <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

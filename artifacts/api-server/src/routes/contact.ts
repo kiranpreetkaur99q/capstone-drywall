@@ -1,5 +1,4 @@
 import { Router, type IRouter } from "express";
-import { ReplitConnectors } from "@replit/connectors-sdk";
 import { logger } from "../lib/logger";
 
 const router: IRouter = Router();
@@ -73,10 +72,19 @@ router.post("/contact", async (req, res) => {
   `;
 
   try {
-    const connectors = new ReplitConnectors();
+    const apiKey = process.env["RESEND_API_KEY"];
+    if (!apiKey) {
+      logger.error("RESEND_API_KEY is not set");
+      res.status(500).json({ success: false, message: "Email service is not configured. Please call us directly." });
+      return;
+    }
 
-    const response = await connectors.proxy("resend", "/emails", {
+    const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         from: "Capstone Drywall <onboarding@resend.dev>",
         to: ["info@capstonedrywall.ca"],

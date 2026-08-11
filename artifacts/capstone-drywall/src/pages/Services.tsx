@@ -12,7 +12,7 @@ import imgFraming1   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.55_1785560
 import imgFraming2   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_1785560771418.jpeg';
 import imgTBar       from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_(1)_1785560764251.jpeg';
 import imgSoffit     from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_(2)_1785560779700.jpeg';
-import imgInsulation from '@assets/generated_images/service-residential.jpg';
+import imgInsulation from '@assets/WhatsApp_Image_2026-08-08_at_11.56.01_1786475434556.jpeg';
 
 const services = [
   {

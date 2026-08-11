@@ -70,7 +70,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-primary text-white font-bold uppercase tracking-widest text-xs px-4 py-2 rounded-sm mb-8"
             >
               <Star className="w-3 h-3 fill-white" />
-              Surrey, BC's Trusted Drywall Contractor
+              BC's Trusted Drywall Contractor
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-white leading-[1.0] tracking-tight uppercase mb-6">

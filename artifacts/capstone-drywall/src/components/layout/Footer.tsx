@@ -78,8 +78,6 @@ export function Footer() {
                 'Commercial Taping & Plastering',
                 'Metal Steel Stud Framing',
                 'T-Bar & Acoustic Ceilings',
-                'Metal Ceiling Panels',
-                'Specialty Ceilings & Soffit',
                 'Insulation',
               ].map((s) => (
                 <li key={s}>

@@ -199,8 +199,7 @@ export default function Contact() {
                           <option value="taping-plastering">Commercial Drywall Taping & Plastering</option>
                           <option value="steel-stud-framing">Metal Steel Stud Framing</option>
                           <option value="tbar-acoustic-ceilings">T-Bar & Acoustic Ceilings</option>
-                          <option value="metal-ceiling-panels">Metal Ceiling Panels</option>
-                          <option value="specialty-ceilings">Specialty Ceilings & Soffit</option>
+
                           <option value="insulation">Insulation</option>
                           <option value="other">Other / Multiple</option>
                         </select>

@@ -9,7 +9,6 @@ import { Head } from '@/components/seo/Head';
 import imgInstall    from '@assets/WhatsApp_Image_2026-08-08_at_11.56.22_1786475514099.jpeg';
 import imgTaping     from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_1785560802133.jpeg';
 import imgFraming1   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.55_1785560755445.jpeg';
-import imgFraming2   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_1785560771418.jpeg';
 import imgTBar       from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_(1)_1785560764251.jpeg';
 import imgInsulation from '@assets/WhatsApp_Image_2026-08-08_at_11.56.01_1786475434556.jpeg';
 
@@ -41,13 +40,6 @@ const services = [
     desc: "Installation of suspended T-bar grid systems and acoustic ceiling tiles for offices, schools, healthcare facilities, and retail spaces. We handle full grid layout, tile placement, and integration with lighting and HVAC to deliver a clean, professional finish every time.",
     bullets: ["T-bar suspended grid systems", "Acoustic tile installation", "Integration with lighting & HVAC"],
     img: imgTBar
-  },
-  {
-    id: "metal-ceiling-panels",
-    title: "Metal Ceiling Panels & Installation",
-    desc: "Supply and installation of metal ceiling panels for modern commercial interiors. Metal panel ceilings offer a sleek, contemporary aesthetic combined with durability and ease of maintenance — perfect for lobbies, corridors, boardrooms, and high-end retail environments.",
-    bullets: ["Snap-in & lay-in metal panels", "Custom grid configurations", "Commercial & institutional projects"],
-    img: imgFraming2
   },
   {
     id: "insulation",

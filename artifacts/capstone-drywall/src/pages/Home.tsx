@@ -3,7 +3,7 @@ import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import {
   ArrowRight, Phone, MapPin, Mail, Shield, Star,
-  Layers, Wrench, Grid3X3, Volume2, PanelTop, Wind,
+  Layers, Wrench, Grid3X3, Volume2, Wind,
   CheckCircle2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -23,7 +23,6 @@ const services = [
   { icon: Wrench,    title: "Taping & Plastering",               desc: "Seamless, paint-ready surfaces with multi-coat plastering and feather-edge blending.",  id: "taping-plastering"    },
   { icon: Grid3X3,   title: "Steel Stud Framing",                desc: "Precision metal framing for partitions, walls, and bulkheads — commercial grade.",       id: "steel-stud-framing"   },
   { icon: Volume2,   title: "T-Bar & Acoustic Ceilings",         desc: "Suspended grid systems and acoustic tile for offices, clinics, and retail spaces.",       id: "tbar-acoustic-ceilings"},
-  { icon: PanelTop,  title: "Metal Ceiling Panels",              desc: "Sleek metal panel ceilings for lobbies, corridors, and high-end commercial interiors.",    id: "metal-ceiling-panels" },
   { icon: Wind,      title: "Insulation",                        desc: "Batt, blown-in, and board insulation for residential and commercial applications.",        id: "insulation"           },
 ];
 

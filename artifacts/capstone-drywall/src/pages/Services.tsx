@@ -6,7 +6,7 @@ import { Link } from 'wouter';
 import { Head } from '@/components/seo/Head';
 
 // Real Capstone Drywall job site photos
-import imgInstall    from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_(1)_1785560789215.jpeg';
+import imgInstall    from '@assets/WhatsApp_Image_2026-08-08_at_11.56.22_1786475514099.jpeg';
 import imgTaping     from '@assets/WhatsApp_Image_2026-07-30_at_21.44.44_1785560802133.jpeg';
 import imgFraming1   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.55_1785560755445.jpeg';
 import imgFraming2   from '@assets/WhatsApp_Image_2026-07-30_at_21.50.54_1785560771418.jpeg';

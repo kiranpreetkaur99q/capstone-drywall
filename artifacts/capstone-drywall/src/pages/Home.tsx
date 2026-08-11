@@ -3,7 +3,7 @@ import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import {
   ArrowRight, Phone, MapPin, Mail, Shield, Star,
-  Layers, Wrench, Grid3X3, Volume2, PanelTop, Sparkles, Wind,
+  Layers, Wrench, Grid3X3, Volume2, PanelTop, Wind,
   CheckCircle2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -24,7 +24,6 @@ const services = [
   { icon: Grid3X3,   title: "Steel Stud Framing",                desc: "Precision metal framing for partitions, walls, and bulkheads — commercial grade.",       id: "steel-stud-framing"   },
   { icon: Volume2,   title: "T-Bar & Acoustic Ceilings",         desc: "Suspended grid systems and acoustic tile for offices, clinics, and retail spaces.",       id: "tbar-acoustic-ceilings"},
   { icon: PanelTop,  title: "Metal Ceiling Panels",              desc: "Sleek metal panel ceilings for lobbies, corridors, and high-end commercial interiors.",    id: "metal-ceiling-panels" },
-  { icon: Sparkles,  title: "Specialty Ceilings & Soffit",       desc: "Coffered ceilings, bulkheads, soffits, and custom architectural ceiling assemblies.",      id: "specialty-ceilings"   },
   { icon: Wind,      title: "Insulation",                        desc: "Batt, blown-in, and board insulation for residential and commercial applications.",        id: "insulation"           },
 ];
 

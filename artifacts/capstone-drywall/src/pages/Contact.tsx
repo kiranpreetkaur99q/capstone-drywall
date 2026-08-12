@@ -93,7 +93,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-2xl font-bold text-secondary mb-6">Get in Touch</h2>
                 <p className="text-slate-600 mb-8">
-                  Fill out the form to request a quote, or reach us directly using the information below. We aim to respond to all inquiries within 24 business hours.
+                  Fill out the form to request a quote, or reach us directly. Our office is based in Surrey, BC — we serve clients across all of British Columbia.
                 </p>
               </div>
 
@@ -103,8 +103,18 @@ export default function Contact() {
                     <Phone className="text-primary w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-secondary mb-1">Phone</h3>
+                    <h3 className="font-bold text-secondary mb-1">Office</h3>
                     <a href="tel:6725137213" className="text-slate-600 hover:text-primary transition-colors text-lg">(672) 513-7213</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                    <Phone className="text-primary w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-secondary mb-1">Estimations</h3>
+                    <a href="tel:2366326062" className="text-slate-600 hover:text-primary transition-colors text-lg">(236) 632-6062</a>
                   </div>
                 </div>
 

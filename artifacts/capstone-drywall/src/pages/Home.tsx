@@ -411,10 +411,10 @@ export default function Home() {
                 <p className="text-primary font-bold uppercase tracking-widest text-sm">Where We Work</p>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-secondary">
-                Proudly Serving British Columbia
+                Proudly Serving All of BC
               </h2>
               <p className="text-slate-600 max-w-md">
-                Based in Surrey, BC — Capstone Drywall operates across two major BC regions.
+                Office based in Surrey, BC — Capstone Drywall delivers professional drywall services across the entire province of British Columbia.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-5 shrink-0">

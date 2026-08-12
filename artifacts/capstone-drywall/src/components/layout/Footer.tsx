@@ -34,7 +34,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-secondary-foreground/70 leading-relaxed text-sm">
-              Professional drywall contracting services for residential and commercial projects across Vancouver Island and the Lower Mainland.
+              Professional drywall contracting services for residential and commercial projects across all of British Columbia. Office based in Surrey, BC.
             </p>
             {/* Mini trust badge */}
             <div className="inline-flex items-center gap-2 border border-primary/40 rounded-sm px-3 py-1.5">
@@ -90,7 +90,7 @@ export function Footer() {
             </ul>
             <div className="pt-2 border-t border-white/10">
               <p className="text-xs text-white/40 uppercase tracking-wider font-bold mb-2">Service Areas</p>
-              <p className="text-secondary-foreground/70 text-sm">Vancouver Island &amp; Lower Mainland</p>
+              <p className="text-secondary-foreground/70 text-sm">All of British Columbia</p>
             </div>
           </div>
 
@@ -106,8 +106,17 @@ export function Footer() {
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <span className="block text-xs font-bold text-white/50 uppercase tracking-wider mb-0.5">Phone</span>
+                  <span className="block text-xs font-bold text-white/50 uppercase tracking-wider mb-0.5">Office</span>
                   <a href="tel:6725137213" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm font-medium">(672) 513-7213</a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-primary/15 rounded-sm flex items-center justify-center shrink-0 mt-0.5">
+                  <Phone className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-white/50 uppercase tracking-wider mb-0.5">Estimations</span>
+                  <a href="tel:2366326062" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm font-medium">(236) 632-6062</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">

@@ -245,7 +245,7 @@ export default function Home() {
               },
               {
                 step: "02",
-                title: "On-Site Quote",
+                title: "Detailed Quote",
                 desc: "We visit the site, take measurements, and provide a clear, detailed written quote so there are no surprises.",
               },
               {

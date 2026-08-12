@@ -218,6 +218,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── OUR PROCESS ── */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <span className="w-8 h-0.5 bg-primary rounded-full" />
+              <p className="text-primary font-bold uppercase tracking-widest text-sm">How It Works</p>
+              <span className="w-8 h-0.5 bg-primary rounded-full" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-secondary">Our Process</h2>
+            <p className="text-slate-500 mt-4 max-w-xl mx-auto text-lg">
+              From first call to final coat — here's exactly what to expect when you work with Capstone.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+            {/* Connector line (desktop) */}
+            <div className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-0.5 bg-slate-100 z-0" />
+
+            {[
+              {
+                step: "01",
+                title: "Free Consultation",
+                desc: "Contact us by phone or form. We'll discuss your project scope, timeline, and budget — no pressure, no obligation.",
+              },
+              {
+                step: "02",
+                title: "On-Site Quote",
+                desc: "We visit the site, take measurements, and provide a clear, detailed written quote so there are no surprises.",
+              },
+              {
+                step: "03",
+                title: "Scheduled Execution",
+                desc: "Our experienced crew arrives on time, works clean, and keeps you informed throughout every stage of the job.",
+              },
+              {
+                step: "04",
+                title: "Final Walkthrough",
+                desc: "We inspect every surface with you before we leave. Your satisfaction is the sign-off — not the clock.",
+              },
+            ].map((item, idx) => (
+              <motion.div
+                key={item.step}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: idx * 0.1 }}
+                className="relative z-10 flex flex-col items-center text-center"
+              >
+                {/* Step circle */}
+                <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-6 shadow-lg border-4 border-white">
+                  <span className="text-primary font-extrabold text-xl">{item.step}</span>
+                </div>
+                <h3 className="text-lg font-bold text-secondary mb-3">{item.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed max-w-[220px]">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-14">
+            <Link href="/contact">
+              <Button size="lg" className="h-13 px-10 font-bold shadow-lg shadow-primary/30">
+                Start With a Free Quote <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── WHY CAPSTONE ── */}
       <section className="py-24 bg-secondary overflow-hidden">
         <div className="container mx-auto px-6">

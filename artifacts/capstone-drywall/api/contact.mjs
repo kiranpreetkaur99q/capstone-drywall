@@ -86,7 +86,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'Capstone Drywall <info@capstonedrywall.ca>',
-        to: [process.env.CONTACT_FORM_TO_EMAIL || 'capstoneroofinginfo@gmail.com'],
+        to: [process.env.CONTACT_FORM_TO_EMAIL || 'info@capstonedrywall.ca'],
         reply_to: email,
         subject: `New Quote Request: ${serviceLabel} — ${name}`,
         html,

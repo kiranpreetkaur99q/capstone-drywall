@@ -84,7 +84,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Capstone Drywall <onboarding@resend.dev>',
+        from: 'Capstone Drywall <info@capstonedrywall.ca>',
         to: [process.env.CONTACT_FORM_TO_EMAIL || 'capstoneroofinginfo@gmail.com'],
         reply_to: email,
         subject: `New Quote Request: ${serviceLabel} — ${name}`,

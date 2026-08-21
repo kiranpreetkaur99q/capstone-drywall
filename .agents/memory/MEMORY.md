@@ -1,0 +1,1 @@
+- [Vercel function compilation](vercel-function-compilation.md) — Vercel Functions must not inherit the frontend no-emit TypeScript configuration.
